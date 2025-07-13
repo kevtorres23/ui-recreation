@@ -10,7 +10,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.safe}>
       <ScrollView style={styles.scroll}>
-        <View className="flex-1 items-center justify-center w-screen bg-slate-100 px-8 gap-8 pb-10">
+        <View className="flex-1 items-center justify-center w-screen bg-slate-50 px-8 gap-8 pb-10">
           <View className='absolute bg-yellow-500 h-[350px] mt-[-120px] w-[600px] rounded-[50%] top-0'>
           </View>
 
