@@ -36,7 +36,9 @@ export default function HomeScreen() {
             <TouchableOpacity onPress={() => router.navigate('/restaurants')} className="w-64 h-32 mr-4 rounded-xl overflow-hidden items-center justify-center bg-[#87BC3E]">
               <Image source={require('../assets/images/burger.webp')} className='max-w-[100px] max-h-[100px]' />
             </TouchableOpacity>
-            <View className="w-64 h-32 mr-10 rounded-xl overflow-hidden bg-[#CB8F48]"></View>
+            <TouchableOpacity onPress={() => router.navigate('/conference')} className="w-64 h-32 mr-4 rounded-xl overflow-hidden items-center justify-center bg-amber-700">
+              <Image source={require('../assets/images/burger.webp')} className='max-w-[100px] max-h-[100px]' />
+            </TouchableOpacity>
           </ScrollView>
 
           <View className='w-full flex-col gap-3'>
@@ -53,7 +55,7 @@ export default function HomeScreen() {
             <ScrollView horizontal={true} className='flex-row gap-4 ml-6 box-border'>
               <CategoryCard image={require('../assets/images/restaurant-3d.webp')} name='Restaurant' btnColor='#FFBB00' />
               <CategoryCard image={require('../assets/images/cooking-3d.webp')} name='Hand Made' btnColor='#87BC3E' />
-              <CategoryCard image={require('../assets/images/dry-food-3d.webp')} name='Dry Food' btnColor='#87BC3E'/>
+              <CategoryCard image={require('../assets/images/dry-food-3d.webp')} name='Dry Food' btnColor='#87BC3E' />
             </ScrollView>
           </View>
 
@@ -63,8 +65,8 @@ export default function HomeScreen() {
             </Text>
 
             <ScrollView horizontal={true} className='px-6'>
-              <LastTimeCard image={require('../assets/images/pizza1.webp')} placeName='Pizza King' desc='A good place to eat pizza.' score={4.8} bgColor='#87BC3E'/>
-              <LastTimeCard image={require('../assets/images/pizza1.webp')} placeName='Pizza King' desc='A good place to eat pizza.' score={4.8} bgColor='#FFBB00'/>
+              <LastTimeCard image={require('../assets/images/pizza1.webp')} placeName='Pizza King' desc='A good place to eat pizza.' score={4.8} bgColor='#87BC3E' />
+              <LastTimeCard image={require('../assets/images/pizza1.webp')} placeName='Pizza King' desc='A good place to eat pizza.' score={4.8} bgColor='#FFBB00' />
             </ScrollView>
           </View>
         </View>

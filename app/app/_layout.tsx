@@ -55,6 +55,17 @@ export default function RootLayout() {
             return <Ionicons name="cart" size={24} color="black" />
           }
         }}></Stack.Screen>
+
+        <Stack.Screen name='conference' options={{
+          headerShown: true,
+          headerTransparent: true,
+          headerTintColor: "white",
+          headerTitle: "Conference",
+          headerTitleAlign: 'center',
+          headerRight: () => {
+            return <Ionicons name="cart" size={24} color="white" />
+          }
+        }}></Stack.Screen>
       </Stack>
     </React.Fragment>
   );
