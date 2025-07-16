@@ -44,6 +44,17 @@ export default function RootLayout() {
             return <Ionicons name="cart" size={24} color="white" />
           }
         }}></Stack.Screen>
+
+        <Stack.Screen name='restaurants' options={{
+          headerShown: true,
+          headerTransparent: true,
+          headerTintColor: "black",
+          headerTitle: "Restaurants",
+          headerTitleAlign: 'center',
+          headerRight: () => {
+            return <Ionicons name="cart" size={24} color="black" />
+          }
+        }}></Stack.Screen>
       </Stack>
     </React.Fragment>
   );

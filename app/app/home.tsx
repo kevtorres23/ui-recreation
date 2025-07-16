@@ -33,9 +33,9 @@ export default function HomeScreen() {
           </View>
 
           <ScrollView horizontal={true} className='w-full px-6'>
-            <View className="w-64 h-32 mr-4 rounded-xl overflow-hidden items-center justify-center bg-[#87BC3E]">
+            <TouchableOpacity onPress={() => router.navigate('/restaurants')} className="w-64 h-32 mr-4 rounded-xl overflow-hidden items-center justify-center bg-[#87BC3E]">
               <Image source={require('../assets/images/burger.webp')} className='max-w-[100px] max-h-[100px]' />
-            </View>
+            </TouchableOpacity>
             <View className="w-64 h-32 mr-10 rounded-xl overflow-hidden bg-[#CB8F48]"></View>
           </ScrollView>
 

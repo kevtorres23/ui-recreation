@@ -5,7 +5,7 @@ import { useRouter } from 'expo-router';
 
 type categoryProps = {
     name: string,
-    image: any
+    image: any,
     btnColor: string,
 }
 
@@ -20,7 +20,7 @@ function CategoryCard(props: categoryProps) {
     }
 
     return (
-        <View className="flex-col gap-3 px-6 py-4 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] items-center justify-center mr-4 bg-white">
+        <View className="flex-col gap-3 px-6 py-4 rounded-3xl shadow-xl items-center justify-center mr-4 bg-white">
             <Image source={triangleImg} className="absolute top-0 right-0 max-w-28 max-h-28"></Image>
 
             <View className='px-2 py-2 rounded-[50%] items-center justify-center'>

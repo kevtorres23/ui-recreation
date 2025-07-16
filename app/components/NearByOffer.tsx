@@ -11,7 +11,7 @@ type props = {
 
 function NearByOffer(props: props) {
     return (
-        <View className="bg-white max-h-40 rounded-2xl gap-3 mr-4">
+        <View className="bg-white shadow-xl max-h-40 rounded-2xl gap-3 mr-4">
             <Image className="w-full max-h-24 rounded-2xl" source={props.image} />
             <View className="px-3 flex-row gap-2 items-center justify-center">
                 <Text className="text-slate-950 text-lg font-bold">

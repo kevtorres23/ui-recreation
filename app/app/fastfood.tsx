@@ -19,9 +19,9 @@ function FastFood() {
                                 Near By Offer
                             </Text>
                             <ScrollView className='ml-6' horizontal={true}>
-                                <NearByOffer image={require('../assets/images/food-bg1.jpg')} percentage={30} name='Restaurant 1'/>
-                                <NearByOffer image={require('../assets/images/restaurant2.jpg')} percentage={30} name='Restaurant 2'/>
-                                <NearByOffer image={require('../assets/images/restaurant3.jpeg')} percentage={30} name='Restaurant 3'/>
+                                <NearByOffer image={require('../assets/images/food-bg1.jpg')} percentage={30} name='Restaurant 1' />
+                                <NearByOffer image={require('../assets/images/restaurant2.jpg')} percentage={30} name='Restaurant 2' />
+                                <NearByOffer image={require('../assets/images/restaurant3.jpeg')} percentage={30} name='Restaurant 3' />
                             </ScrollView>
                         </View>
 
@@ -30,9 +30,9 @@ function FastFood() {
                                 Fast Food
                             </Text>
                             <View className='flex-col gap-4'>
-                                <DishCard image={require('../assets/images/dish1.jpg')} name='Tomato Rice' time={30} price={39}/>
-                                <DishCard image={require('../assets/images/dish2.jpg')} name='Onion Dip' time={30} price={39}/>
-                                <DishCard image={require('../assets/images/dish3.jpg')} name='Spaghetti' time={30} price={39}/>
+                                <DishCard image={require('../assets/images/dish1.jpg')} name='Tomato Rice' time={30} price={39} />
+                                <DishCard image={require('../assets/images/dish2.jpg')} name='Onion Dip' time={30} price={39} />
+                                <DishCard image={require('../assets/images/dish3.jpg')} name='Spaghetti' time={30} price={39} />
                             </View>
                         </View>
                     </View>
