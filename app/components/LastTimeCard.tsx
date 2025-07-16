@@ -8,7 +8,7 @@ type props = {
     desc: string,
     score: number,
     image: any,
-    spent: number,
+    spent?: number,
     bgColor: string,
 }
 

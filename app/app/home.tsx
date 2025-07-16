@@ -39,18 +39,18 @@ export default function HomeScreen() {
             <View className="w-64 h-32 mr-10 rounded-xl overflow-hidden bg-[#CB8F48]"></View>
           </ScrollView>
 
-          <View className='w-full flex-col gap-2'>
-            <View className='px-6'>
-              <Text className='font-bold text-2xl'>
+          <View className='w-full flex-col gap-3'>
+            <View className='px-6 gap-1'>
+              <Text className='font-bold text-xl'>
                 Main Categories
               </Text>
 
-              <Text className='font-medium text-slate-600 text-lg'>
+              <Text className='font-medium text-slate-600 text-base'>
                 Food delivery services in over the world.
               </Text>
             </View>
 
-            <ScrollView horizontal={true} className='flex-row gap-4 px-6 box-border'>
+            <ScrollView horizontal={true} className='flex-row gap-4 ml-6 box-border'>
               <CategoryCard image={require('../assets/images/restaurant-3d.webp')} name='Restaurant' btnColor='#FFBB00' />
               <CategoryCard image={require('../assets/images/cooking-3d.webp')} name='Hand Made' btnColor='#87BC3E' />
               <CategoryCard image={require('../assets/images/dry-food-3d.webp')} name='Dry Food' btnColor='#87BC3E'/>
@@ -58,7 +58,7 @@ export default function HomeScreen() {
           </View>
 
           <View className='w-full flex-col gap-4'>
-            <Text className='font-bold text-2xl px-6'>
+            <Text className='font-bold text-xl px-6'>
               Last Time Visited
             </Text>
 

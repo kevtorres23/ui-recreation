@@ -6,6 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 import '../global.css';
 import '../index.css';
+import Ionicons from '@react-native-vector-icons/ionicons';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { HeaderTitle } from '@react-navigation/elements';
@@ -31,6 +32,17 @@ export default function RootLayout() {
 
         <Stack.Screen name='home' options={{
           headerShown: false,
+        }}></Stack.Screen>
+
+        <Stack.Screen name='fastfood' options={{
+          headerShown: true,
+          headerTransparent: true,
+          headerTintColor: "white",
+          headerTitle: "Fast Food",
+          headerTitleAlign: 'center',
+          headerRight: () => {
+            return <Ionicons name="cart" size={24} color="white" />
+          }
         }}></Stack.Screen>
       </Stack>
     </React.Fragment>
