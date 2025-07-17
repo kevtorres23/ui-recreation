@@ -90,6 +90,32 @@ export default function RootLayout() {
           headerTitleAlign: 'center',
         }}></Stack.Screen>
 
+        <Stack.Screen name='order_successful' options={{
+          headerShown: true,
+          headerTintColor: "black",
+          headerTitle: "Succesful Order",
+          headerTitleAlign: 'center',
+        }}></Stack.Screen>
+
+        <Stack.Screen name='jumbo_burger' options={{
+          headerShown: true,
+          headerTransparent: true,
+          headerTintColor: "black",
+          headerTitle: "Jumbo Burger",
+          headerTitleAlign: 'center',
+          headerRight: () => {
+            return <Ionicons name="cart" size={24} color="black" />
+          }
+        }}></Stack.Screen>
+
+        <Stack.Screen name='reservation' options={{
+          headerShown: true,
+          headerTransparent: true,
+          headerTintColor: "white",
+          headerTitle: "Reservation",
+          headerTitleAlign: 'center',
+        }}></Stack.Screen>
+
       </Stack>
     </React.Fragment>
   );

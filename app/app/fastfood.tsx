@@ -22,7 +22,9 @@ function FastFood() {
                                 <TouchableOpacity onPress={() => router.navigate('/confirm_reservation')}>
                                     <NearByOffer image={require('../assets/images/food-bg1.jpg')} percentage={30} name='Restaurant 1' />
                                 </TouchableOpacity>
-                                <NearByOffer image={require('../assets/images/restaurant2.jpg')} percentage={30} name='Restaurant 2' />
+                                <TouchableOpacity onPress={() => router.navigate('/reservation')}>
+                                    <NearByOffer image={require('../assets/images/restaurant2.jpg')} percentage={30} name='Restaurant 2' />
+                                </TouchableOpacity>
                                 <NearByOffer image={require('../assets/images/restaurant3.jpeg')} percentage={30} name='Restaurant 3' />
                             </ScrollView>
                         </View>

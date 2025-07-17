@@ -106,14 +106,13 @@ function Checkout() {
                         </Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity onPress={() => router.navigate('/checkout')} className='rounded-xl w-full bg-[#FFBB00] py-4 items-center justify-center'>
+                    <TouchableOpacity onPress={() => router.navigate('/order_successful')} className='rounded-xl w-full bg-[#FFBB00] py-4 items-center justify-center'>
                         <Text className='text-lg font-bold'>
                             Place Order
                         </Text>
                     </TouchableOpacity>
 
                 </View>
-
             </ScrollView>
         </SafeAreaView>
     );

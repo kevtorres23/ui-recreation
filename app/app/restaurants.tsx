@@ -7,7 +7,7 @@ import NearByOffer from '@/components/NearByOffer';
 import FeaturedRestaurant from '@/components/FeaturedRestaurant';
 import FoodCategory from '@/components/FoodCategory';
 
-export default function HomeScreen() {
+export default function Restaurant() {
   const router = useRouter();
 
   return (
@@ -33,7 +33,9 @@ export default function HomeScreen() {
             </View>
 
             <ScrollView horizontal={true} className='w-full'>
-              <ImageBackground source={require('../assets/images/fastfood-bg.jpg')} className="w-64 h-32 mx-6 rounded-xl overflow-hidden" />
+              <TouchableOpacity onPress={() => router.navigate('/jumbo_burger')}>
+                <ImageBackground source={require('../assets/images/fastfood-bg.jpg')} className="w-64 h-32 mx-6 rounded-xl overflow-hidden" />
+              </TouchableOpacity>
               <ImageBackground source={require('../assets/images/food-bg1.jpg')} className="w-64 h-32 mr-6 rounded-xl overflow-hidden" />
             </ScrollView>
 
