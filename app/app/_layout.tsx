@@ -66,6 +66,23 @@ export default function RootLayout() {
             return <Ionicons name="cart" size={24} color="white" />
           }
         }}></Stack.Screen>
+
+        <Stack.Screen name='confirm_reservation' options={{
+          headerShown: true,
+          headerTransparent: true,
+          headerTintColor: "white",
+          headerTitle: "Confirm Reservation",
+          headerTitleAlign: 'center',
+        }}></Stack.Screen>
+
+        <Stack.Screen name='medium_search' options={{
+          headerShown: true,
+          headerTransparent: true,
+          headerTintColor: "black",
+          headerTitle: "Medium Search",
+          headerTitleAlign: 'center',
+        }}></Stack.Screen>
+
       </Stack>
     </React.Fragment>
   );

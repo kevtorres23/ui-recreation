@@ -27,7 +27,7 @@ export default function HomeScreen() {
               </Text>
             </View>
 
-            <TouchableOpacity className='bg-white w-12 h-12 rounded-[50%] items-center justify-center'>
+            <TouchableOpacity onPress={() => router.navigate('/medium_search')} className='bg-white w-12 h-12 rounded-[50%] items-center justify-center'>
               <Ionicons name="search-outline" color="black" size={26} />
             </TouchableOpacity>
           </View>

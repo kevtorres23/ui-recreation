@@ -19,7 +19,9 @@ function FastFood() {
                                 Near By Offer
                             </Text>
                             <ScrollView className='ml-6' horizontal={true}>
-                                <NearByOffer image={require('../assets/images/food-bg1.jpg')} percentage={30} name='Restaurant 1' />
+                                <TouchableOpacity onPress={() => router.navigate('/confirm_reservation')}>
+                                    <NearByOffer image={require('../assets/images/food-bg1.jpg')} percentage={30} name='Restaurant 1' />
+                                </TouchableOpacity>
                                 <NearByOffer image={require('../assets/images/restaurant2.jpg')} percentage={30} name='Restaurant 2' />
                                 <NearByOffer image={require('../assets/images/restaurant3.jpeg')} percentage={30} name='Restaurant 3' />
                             </ScrollView>

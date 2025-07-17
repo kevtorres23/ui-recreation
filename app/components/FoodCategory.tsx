@@ -20,20 +20,18 @@ function FoodCategory(props: categoryProps) {
     }
 
     return (
-        <View className="flex-col gap-3 rounded-3xl shadow-xl items-center justify-center mr-4 bg-white w-28">
-            <View className="w-full h-28 items-center justify-center rounded-3xl" style={{ backgroundColor: props.bgColor }}>
-                <Image source={props.image} className="max-w-[72px] max-h-[72px]"></Image>
+        <View className="flex-col gap-3 rounded-3xl shadow-xl items-center justify-center mr-4 bg-white w-24">
+            <View className="w-full h-24 items-center justify-center rounded-3xl" style={{ backgroundColor: props.bgColor }}>
+                <Image source={props.image} className="max-w-[64px] max-h-[64px]"></Image>
 
             </View>
 
-            <View className="pb-4 items-center justify-center">
-                <Text className="font-bold text-lg">
+            <View className="pb-4 items-center justify-center gap-2">
+                <Text className="font-bold text-base">
                     {props.name}
                 </Text>
-                <TouchableOpacity onPress={() => router.navigate('/fastfood')} className="h-10 w-10 items-center justify-center rounded-[50%] bg-[#87BC3E]">
-                    <Text className="font-semibold">
-                        <Ionicons name="chevron-forward-outline" color="white" size={18} />
-                    </Text>
+                <TouchableOpacity onPress={() => router.navigate('/fastfood')} className="h-8 w-8 items-center justify-center rounded-[50%] bg-[#87BC3E]">
+                    <Ionicons name="chevron-forward-outline" color="white" size={18} />
                 </TouchableOpacity>
             </View>
         </View>
