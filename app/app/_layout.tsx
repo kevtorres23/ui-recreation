@@ -116,6 +116,14 @@ export default function RootLayout() {
           headerTitleAlign: 'center',
         }}></Stack.Screen>
 
+        <Stack.Screen name='track_order' options={{
+          headerShown: true,
+          headerTransparent: true,
+          headerTintColor: "black",
+          headerTitle: "Track Order",
+          headerTitleAlign: 'center',
+        }}></Stack.Screen>
+
       </Stack>
     </React.Fragment>
   );

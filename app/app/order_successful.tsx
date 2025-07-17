@@ -18,7 +18,7 @@ function SuccessfulOrder() {
                     </View>
 
                     <View className='w-full flex-col gap-6'>
-                        <TouchableOpacity onPress={() => router.navigate('/checkout')} className='rounded-xl w-full bg-[#FFBB00] py-4 items-center justify-center'>
+                        <TouchableOpacity onPress={() => router.navigate('/track_order')} className='rounded-xl w-full bg-[#FFBB00] py-4 items-center justify-center'>
                             <Text className='text-lg font-bold'>
                                 Track Order
                             </Text>
@@ -30,7 +30,6 @@ function SuccessfulOrder() {
                             </Text>
                         </TouchableOpacity>
                     </View>
-
                 </View>
             </ScrollView>
         </SafeAreaView>
