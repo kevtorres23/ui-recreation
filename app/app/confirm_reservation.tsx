@@ -1,11 +1,7 @@
 import { Platform, StyleSheet, View, Text, SafeAreaView, TouchableOpacity, Image, ImageBackground, ScrollView } from 'react-native';
-import HomeHeader from '@/components/HomeHeader';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import NearByOffer from '@/components/NearByOffer';
-import DishCard from '@/components/DishCard';
 import Ionicons from '@react-native-vector-icons/ionicons';
-import ConferenceCard from '@/components/ConferenceCard';
 
 function ConfirmReservation() {
     const router = useRouter();
@@ -159,7 +155,7 @@ function ConfirmReservation() {
                         </View>
 
                         <View className='px-6 mt-4'>
-                            <TouchableOpacity className='rounded-xl w-full bg-[#FFBB00] py-4 items-center justify-center'>
+                            <TouchableOpacity onPress={() => router.navigate('/checkout')}  className='rounded-xl w-full bg-[#FFBB00] py-4 items-center justify-center'>
                                 <Text className='text-lg font-bold'>
                                     Book Reservation
                                 </Text>

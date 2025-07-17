@@ -83,6 +83,13 @@ export default function RootLayout() {
           headerTitleAlign: 'center',
         }}></Stack.Screen>
 
+        <Stack.Screen name='checkout' options={{
+          headerShown: true,
+          headerTintColor: "black",
+          headerTitle: "Checkout",
+          headerTitleAlign: 'center',
+        }}></Stack.Screen>
+
       </Stack>
     </React.Fragment>
   );

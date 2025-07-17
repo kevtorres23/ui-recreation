@@ -15,10 +15,8 @@ function MediumSearch() {
     return (
         <SafeAreaView style={styles.safe}>
             <ScrollView style={styles.scroll}>
-                <View className="flex-1 items-center justify-center w-screen bg-gray-50 gap-8 pb-10">
-                    <View className='w-full h-36 rounded-b-3xl overflow-hidden bg-yellow-500'></View>
-
-                    <View className="content gap-8 flex-col w-full">
+                <View className="flex-1 items-center justify-center w-screen rounded-xl bg-yellow-500">
+                    <View className="content gap-8 flex-col w-full rounded-t-3xl pt-6 pb-28 mt-32 bg-white">
                         <View className='w-full flex-col gap-4'>
                             <Text className='px-6 font-bold text-xl'>
                                 Categories
@@ -34,7 +32,7 @@ function MediumSearch() {
 
                         <View className='fastfood-section gap-3'>
                             <Text className='text-xl font-bold px-6'>
-                                Show by
+                                Sort by
                             </Text>
                             <ScrollView horizontal={true} className='flex-row ml-6'>
                                 <TouchableOpacity onPress={() => setSortBtn("recommended")} className='flex-row py-3 w-36 gap-1 rounded-full self-start items-center justify-center mr-3' style={sortBtn === "recommended" ? { borderWidth: 2, borderColor: "#FFBB00" } : { borderWidth: 1, borderColor: "#c7cdd6" }}>
@@ -56,6 +54,38 @@ function MediumSearch() {
                                     </Text>
                                 </TouchableOpacity>
                             </ScrollView>
+                        </View>
+                        <View className='flex-1 w-full px-6 flex-col gap-2'>
+                            <View className='flex-row justify-between'>
+                                <Text className='text-xl font-bold'>
+                                    Price Range:
+                                </Text>
+                                <Text>
+                                    $10 - $100
+                                </Text>
+                            </View>
+
+                            <View className="w-full flex-row items-center justify-center">
+                                <View className='items-center justify-center bg-[#FFBB00] h-10 w-10 rounded-[50%]'>
+                                    <Text className='font-semibold text-sm'>
+                                        $0
+                                    </Text>
+                                </View>
+                                <View className='w-40 h-1 bg-[#FFBB00]'></View>
+                                <View className='items-center justify-center bg-[#FFBB00] h-10 w-10 rounded-[50%]'>
+                                    <Text className='font-semibold text-sm'>
+                                        $100
+                                    </Text>
+                                </View>
+                            </View>
+
+                            <View className='px-6 mt-10'>
+                                <TouchableOpacity className='rounded-xl w-full bg-[#FFBB00] py-4 items-center justify-center'>
+                                    <Text className='text-lg font-bold'>
+                                        Apply Search
+                                    </Text>
+                                </TouchableOpacity>
+                            </View>
                         </View>
                     </View>
                 </View>
