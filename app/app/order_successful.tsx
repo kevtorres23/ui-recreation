@@ -1,7 +1,5 @@
 import { Platform, StyleSheet, View, Text, SafeAreaView, TouchableOpacity, Image, ImageBackground, ScrollView, TextInput } from 'react-native';
 import { useRouter } from 'expo-router';
-import Ionicons from '@react-native-vector-icons/ionicons';
-import DishCard from '@/components/DishCard';
 
 function SuccessfulOrder() {
     const router = useRouter();

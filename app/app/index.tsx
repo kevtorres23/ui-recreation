@@ -34,7 +34,7 @@ export default function HomeScreen() {
             </Text>
           </View>
 
-          <TouchableOpacity onPress={() => router.navigate('/home')} className='bg-yellow-500 py-3 px-24 rounded-xl items-center'>
+          <TouchableOpacity onPress={() => router.navigate('/categories')} className='bg-yellow-500 py-3 px-24 rounded-xl items-center'>
             <Text className='font-bold text-black text-lg'>
               Continue
             </Text>

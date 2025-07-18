@@ -124,6 +124,28 @@ export default function RootLayout() {
           headerTitleAlign: 'center',
         }}></Stack.Screen>
 
+        <Stack.Screen name='categories' options={{
+          headerShown: true,
+          headerTintColor: "black",
+          headerTitle: "Categories",
+          headerTitleAlign: 'center',
+        }}></Stack.Screen>
+
+        <Stack.Screen name='order_received' options={{
+          headerShown: true,
+          headerTintColor: "black",
+          headerTitle: "Order Delivered!",
+          headerTitleAlign: 'center',
+        }}></Stack.Screen>
+
+        <Stack.Screen name='find_location' options={{
+          headerShown: true,
+          headerTransparent: true,
+          headerTintColor: "black",
+          headerTitle: "Find Location",
+          headerTitleAlign: 'center',
+        }}></Stack.Screen>
+
       </Stack>
     </React.Fragment>
   );

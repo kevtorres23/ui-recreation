@@ -22,7 +22,7 @@ export default function Restaurant() {
               <View className='flex-1 flex-row'>
                 <TextInput placeholder='Find food or restaurant' className="shadow-xl flex-1 w-full bg-white p-4 rounded-l-xl">
                 </TextInput>
-                <TouchableOpacity className="flex-1 max-w-14 bg-[#87BC3E] items-center justify-center rounded-r-xl">
+                <TouchableOpacity onPress={() => router.navigate('/find_location')} className="flex-1 max-w-14 bg-[#87BC3E] items-center justify-center rounded-r-xl">
                   <Ionicons name="search" color="white" size={24} />
                 </TouchableOpacity>
               </View>

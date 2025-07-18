@@ -2,7 +2,7 @@ import { Text, View, SafeAreaView, ScrollView, TouchableOpacity, ImageBackground
 import { useRouter } from 'expo-router';
 import Ionicons from "@react-native-vector-icons/ionicons";
 
-function TrackOrder() {
+function FindLocation() {
     const router = useRouter();
 
     return (
@@ -106,4 +106,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default TrackOrder;
+export default FindLocation;
