@@ -146,6 +146,14 @@ export default function RootLayout() {
           headerTitleAlign: 'center',
         }}></Stack.Screen>
 
+        <Stack.Screen name='userprofile' options={{
+          headerShown: true,
+          headerTransparent: true,
+          headerTintColor: "black",
+          headerTitle: "Profile",
+          headerTitleAlign: 'center',
+        }}></Stack.Screen>
+
       </Stack>
     </React.Fragment>
   );

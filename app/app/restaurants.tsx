@@ -1,5 +1,6 @@
 import { Platform, StyleSheet, View, Text, SafeAreaView, TouchableOpacity, Image, ImageBackground, ScrollView, TextInput } from 'react-native';
 import HomeHeader from '@/components/HomeHeader';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'expo-router';
 import Ionicons from '@react-native-vector-icons/ionicons';
 import CategoryCard from '@/components/CategoryCard';
@@ -9,6 +10,17 @@ import FoodCategory from '@/components/FoodCategory';
 
 export default function Restaurant() {
   const router = useRouter();
+  const [image, setImage] = useState("");
+
+  const getImages = async () => {
+    const response = await fetch("https://foodish-api.com/api/");
+    const data = await response.json();
+    setImage(data.image);
+  }
+
+  useEffect(() => {
+    getImages();
+  }, [])
 
   return (
     <SafeAreaView style={styles.safe}>
@@ -34,7 +46,7 @@ export default function Restaurant() {
 
             <ScrollView horizontal={true} className='w-full'>
               <TouchableOpacity onPress={() => router.navigate('/jumbo_burger')}>
-                <ImageBackground source={require('../assets/images/fastfood-bg.jpg')} className="w-64 h-32 mx-6 rounded-xl overflow-hidden" />
+                <ImageBackground source={{uri: image}} className="w-64 h-32 mx-6 rounded-xl overflow-hidden" />
               </TouchableOpacity>
               <ImageBackground source={require('../assets/images/food-bg1.jpg')} className="w-64 h-32 mr-6 rounded-xl overflow-hidden" />
             </ScrollView>
